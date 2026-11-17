@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:fillColor="#0B2A5B" android:pathData="M54,54m-54,0a54,54 0,1 1,108 0a54,54 0,1 1,-108 0" />
+    <!-- ruedas -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="5" android:pathData="M32,66m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0" />
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="5" android:pathData="M76,66m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0" />
+    <!-- cuadro -->
+    <path android:strokeColor="#FFFFFF" android:strokeWidth="5" android:strokeLineJoin="round" android:strokeLineCap="round" android:pathData="M32,66 L46,42 L66,42 L76,66 M46,42 L56,66 L32,66 M66,42 L62,34 L70,34" />
+    <!-- rayo IoT -->
+    <path android:fillColor="#F2B705" android:pathData="M56,18 L46,34 L53,34 L50,46 L62,29 L55,29 Z" />
+</vector>

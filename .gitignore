@@ -1,0 +1,14 @@
+*.iml
+.gradle/
+build/
+local.properties
+.idea/
+captures/
+*.apk
+logs/
+.firebase/
+*-debug.log
+.shots/
+
+# Credenciales: no se suben a Git (ver docs/CONECTAR-FIREBASE.md)
+app/google-services.json

@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.pucp.bicipucp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.pucp.bicipucp"
+        minSdk 34
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        // IP del orquestador. Emulador: 10.0.2.2. Celular real: ./gradlew assembleDebug -PbackendUrl=http://192.168.1.50:8080
+        // También se puede cambiar en la pantalla de Inicio de sesión (campo "Servidor").
+        buildConfigField "String", "BACKEND_URL", "\"${project.findProperty('backendUrl') ?: 'http://10.0.2.2:8080'}\""
+        // Solo para probar sin credenciales: ./gradlew assembleDebug -PuseEmulator=true
+        buildConfigField "boolean", "USE_EMULATOR", "${project.findProperty('useEmulator') ?: 'false'}"
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="azul_pucp">#0B2A5B</color>
+    <color name="azul_oscuro">#07183A</color>
+    <color name="celeste">#2E7DD7</color>
+    <color name="fondo">#F2F5FA</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="texto_principal">#142033</color>
+    <color name="texto_secundario">#5B6779</color>
+    <color name="activo">#1B9A4B</color>
+    <color name="expirado">#D13B3B</color>
+</resources>

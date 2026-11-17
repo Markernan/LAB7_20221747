@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.BiciPUCP" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/azul_pucp</item>
+        <item name="colorOnPrimary">@color/blanco</item>
+        <item name="colorSecondary">@color/celeste</item>
+        <item name="actionBarStyle">@style/Widget.BiciPUCP.ActionBar</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.BiciPUCP.ActionBar</item>
+        <item name="android:windowBackground">@color/fondo</item>
+        <item name="android:statusBarColor">@color/azul_oscuro</item>
+        <item name="android:windowOptOutEdgeToEdgeEnforcement" tools:targetApi="35">true</item>
+    </style>
+    <style name="Widget.BiciPUCP.ActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="background">@color/azul_pucp</item>
+        <item name="titleTextStyle">@style/TextAppearance.BiciPUCP.Titulo</item>
+    </style>
+    <style name="TextAppearance.BiciPUCP.Titulo" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+    <style name="ThemeOverlay.BiciPUCP.ActionBar" parent="ThemeOverlay.Material3.Dark.ActionBar" />
+</resources>

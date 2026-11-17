@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: orquestador-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+# URL directa del validador para la llamada con RestTemplate (el Feign lo resuelve por Eureka)
+validador:
+  url: http://localhost:8001
