@@ -8,7 +8,7 @@ Laboratorio: Firebase (Auth y Storage) + ecosistema de microservicios Spring Boo
 | `eureka-server/` | Servidor de descubrimiento (puerto **8761**) |
 | `pucp-validador-service/` | Reglas + Actuator (puerto **8001**): `/validar/alumno/{codigo}`, `/validar/candado/{pin}` |
 | `orquestador-service/` | `POST /bici/solicitar-desbloqueo` (puerto **8080**): RestTemplate + Feign |
-| `ARQUITECTURA.md` | Respuestas teóricas (pregunta 3.1) |
+
 
 ## Ejecutar
 1. **Backend** (JDK 17+): doble clic en `iniciar-backend.bat` (o `./gradlew bootRun` en cada carpeta, Eureka primero).
