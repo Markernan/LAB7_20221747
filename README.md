@@ -1,4 +1,3 @@
-# pract-eureka — BiciPUCP (Smart Bike Sharing IoT)
 
 Laboratorio: Firebase (Auth y Storage) + ecosistema de microservicios Spring Boot.
 
